@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+	<head>
+		<!-- Add your CSS file to the head section -->
+		<css src="CleverComms_CountdownBanner::css/countdown-banner.css" />
+	</head>
+
+	<body>
+		<!-- Add the Category Banner block to the header -->
+		<!-- <referenceContainer name="page.top">
+			<block class="CleverComms\CountdownBanner\Block\Banner" name="countdown.banner" template="CleverComms_CountdownBanner::banner.phtml"/>
+		</referenceContainer> -->
+
+		<referenceContainer name="wagstaff.page.top.custom.blocks">
+			<block class="CleverComms\CountdownBanner\Block\Banner" name="countdown.banner" template="CleverComms_CountdownBanner::banner.phtml" after="wagstaff.usp.block"/>
+		</referenceContainer>
+		
+	</body>
+</page>

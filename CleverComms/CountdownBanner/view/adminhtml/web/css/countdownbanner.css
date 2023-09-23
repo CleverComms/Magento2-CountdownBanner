@@ -1,0 +1,18 @@
+input.colorpicker-palette[type="color"]{
+  display: block;
+  width: 120px;
+  float: left;
+  height: 33px;
+  margin-right: 5px;
+  border: 0;
+  padding: 0;
+}
+
+input.colorpicker-input[type="text"] {
+  padding: 8px;
+  font-size: 14px;
+}
+
+input.colorpicker-input[type="text"]:invalid{
+  outline: 2px solid red;
+}

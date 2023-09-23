@@ -1,0 +1,57 @@
+/* Countdown Banner */
+.countdown-banner {
+	display: flex;
+    gap: 30px;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	text-align: center;
+}
+
+#countdown-timer {
+	font-weight: 700;
+	min-width: 230px;
+	min-height: 20px;
+	text-align: center;
+	display: inline-block;
+}
+
+.loading {
+	height: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+.breadcrumbs {
+	margin-top: 10px;
+}
+
+
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0px;
+  width: calc(100% - 20px);
+  z-index: 10;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+	.countdown-banner {
+		width: calc(100% + 5px);
+		margin: 0 -10px 15px -10px;
+		padding: 0.5em;
+		flex-direction: column;
+		gap: 2px;
+	}
+		
+	.sticky {
+		  position: fixed;
+		  top: 0px;
+		  z-index: 10;
+	}
+}

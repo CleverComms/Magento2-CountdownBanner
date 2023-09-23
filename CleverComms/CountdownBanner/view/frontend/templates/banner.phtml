@@ -1,0 +1,63 @@
+<?php
+	$isEnabled = $block->getEnabled();
+
+	$bgColor = $block->getBgColor();
+	$textColor = $block->getTextColor();
+	$expiredMessage = $block->getExpiredMessage();
+	$customMessage = $block->getCustomMessage();
+	$bannerLink = $block->getBannerLink();
+	
+	// $deadlineDate = $block->getDeadline();
+	// $deadlineTime = $block->getDeadlineTime();
+	$formattedDeadline = $block->getFormattedDeadline();
+	
+	$bannerConfig['endTime'] = $formattedDeadline;
+	$bannerConfig['expiredMessage'] = $expiredMessage;
+?>
+
+<?php if ($isEnabled): ?>
+
+	<div class="countdown-banner" style="background-color: <?= $bgColor ?>; color: <?= $textColor ?>;">
+	
+		<div>
+			<a href="<?= $bannerLink ?>" style="color: <?= $textColor ?>;">
+				<b><?= $customMessage ?></b>
+			</a>
+		</div>
+		
+		<div>
+			<!-- Displaying the combined date and time here -->
+			<span id="countdown-timer">
+				<img class="loading" height="14" src="<?= $block->getViewFileUrl('CleverComms_CountdownBanner::images/loading.gif') ?>" alt="Loading..." />
+			</span>
+		</div>
+	
+	</div>
+	
+	<script type="text/javascript">
+		require(['CleverComms_CountdownBanner/js/countdown'], function(countdown) {
+			countdown(<?= json_encode($bannerConfig) ?>);
+		});
+	</script>
+	
+	<script>
+	// When the user scrolls the page, execute myFunction
+	window.onscroll = function() {stickyBanner()};
+	
+	// Get the header using class name
+	var header = document.querySelector(".countdown-banner");
+	
+	// Get the offset position of the navbar
+	var sticky = header.offsetTop;
+	
+	// Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+	function stickyBanner() {
+  	if (window.pageYOffset > sticky) {
+		header.classList.add("sticky");
+  	} else {
+		header.classList.remove("sticky");
+  	}
+	}
+	</script>
+
+<?php endif; ?>

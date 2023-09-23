@@ -1,0 +1,19 @@
+<div class="admin__field-control control">
+	
+	<?php 
+		$value = $block->getElement()->getValue();
+		if ($value) {
+			// Convert date to YYYY-MM-DD format
+			$formattedDate = date("Y-m-d", strtotime($value));
+		} else {
+			$formattedDate = '';
+		}
+	?>
+	
+	<input type="date" 
+	   name="<?= $block->getElement()->getName() ?>" 
+	   id="<?= $block->getElement()->getId() ?>" 
+	   value="<?= $formattedDate ?>" 
+	   class="input-text admin__control-text" 
+	   data-ui-id="text-groups-<?= $block->getGroupId() ?>-<?= $block->getFieldId() ?>" />
+</div>
