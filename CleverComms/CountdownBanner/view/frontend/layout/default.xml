@@ -6,14 +6,8 @@
 	</head>
 
 	<body>
-		<!-- Add the Category Banner block to the header -->
-		<!-- <referenceContainer name="page.top">
-			<block class="CleverComms\CountdownBanner\Block\Banner" name="countdown.banner" template="CleverComms_CountdownBanner::banner.phtml"/>
-		</referenceContainer> -->
-
-		<referenceContainer name="wagstaff.page.top.custom.blocks">
-			<block class="CleverComms\CountdownBanner\Block\Banner" name="countdown.banner" template="CleverComms_CountdownBanner::banner.phtml" after="wagstaff.usp.block"/>
-		</referenceContainer>
-		
+		<referenceContainer name="page.top">
+			<block class="CleverComms\CountdownBanner\Block\Banner" name="countdown.banner" template="CleverComms_CountdownBanner::banner.phtml" before="-"/>
+		</referenceContainer>		
 	</body>
 </page>
