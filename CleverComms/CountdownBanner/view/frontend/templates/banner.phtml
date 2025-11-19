@@ -28,14 +28,14 @@
 		<div>
 			<!-- Displaying the combined date and time here -->
 			<span id="countdown-timer">
-				<img class="loading" height="14" src="<?= $block->getViewFileUrl('CravenDunnill_CountdownBanner::images/loading.gif') ?>" alt="Loading..." />
+				<img class="loading" height="14" src="<?= $block->getViewFileUrl('CleverComms_CountdownBanner::images/loading.gif') ?>" alt="Loading..." />
 			</span>
 		</div>
 	
 	</div>
 	
 	<script type="text/javascript">
-		require(['CravenDunnill_CountdownBanner/js/countdown'], function(countdown) {
+		require(['CleverComms_CountdownBanner/js/countdown'], function(countdown) {
 			countdown(<?= json_encode($bannerConfig) ?>);
 		});
 	</script>

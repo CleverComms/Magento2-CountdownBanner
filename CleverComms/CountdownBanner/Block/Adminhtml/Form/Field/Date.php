@@ -1,9 +1,9 @@
 <?php
-namespace CravenDunnill\CountdownBanner\Block\Adminhtml\Form\Field;
+namespace CleverComms\CountdownBanner\Block\Adminhtml\Form\Field;
 
 class Date extends \Magento\Config\Block\System\Config\Form\Field
 {
-	protected $_template = 'CravenDunnill_CountdownBanner::system/config/form/field/date.phtml';
+	protected $_template = 'CleverComms_CountdownBanner::system/config/form/field/date.phtml';
 	
 	protected function _getElementHtml(\Magento\Framework\Data\Form\Element\AbstractElement $element)
 	{
