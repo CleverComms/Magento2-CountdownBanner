@@ -1,5 +1,5 @@
 <?php
-namespace CleverComms\CountdownBanner\Block\Adminhtml\Form\Field;
+namespace CravenDunnill\CountdownBanner\Block\Adminhtml\Form\Field;
  
 class ColorPicker extends \Magento\Config\Block\System\Config\Form\Field
 {
