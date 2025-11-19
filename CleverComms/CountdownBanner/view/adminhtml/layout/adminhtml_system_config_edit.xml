@@ -2,7 +2,7 @@
 <page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	  xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
 	<head>
-		<css src="CravenDunnill_CountdownBanner::css/countdownbanner.css"/>
-		<script src="CravenDunnill_CountdownBanner::js/countdownbanner-colorpicker.js"/>
+		<css src="CleverComms_CountdownBanner::css/countdownbanner.css"/>
+		<script src="CleverComms_CountdownBanner::js/countdownbanner-colorpicker.js"/>
 	</head>
 </page>

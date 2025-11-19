@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
 	<system>
-		<tab id="cravendunnill" translate="label" sortOrder="10">
-			<label>Craven Dunnill</label>
+		<tab id="clevercomms" translate="label" sortOrder="10">
+			<label>Clever Comms</label>
 		</tab>
 
 		<section id="countdownbanner" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
 			<label>Countdown Banner</label>
-			<tab>cravendunnill</tab>
-			<resource>CravenDunnill_CountdownBanner::config_countdownbanner</resource>
+			<tab>clevercomms</tab>
+			<resource>CleverComms_CountdownBanner::config_countdownbanner</resource>
 			<group id="general" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
 				<label>General Configuration</label>
 				
@@ -19,7 +19,7 @@
 				
 				<field id="deadline_date" translate="label comment" type="date" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
 					<label>Deadline Date</label>
-					<frontend_model>CravenDunnill\CountdownBanner\Block\Adminhtml\Form\Field\Date</frontend_model>
+					<frontend_model>CleverComms\CountdownBanner\Block\Adminhtml\Form\Field\Date</frontend_model>
 					<frontend_class>validate-date</frontend_class>
 					<validate>validate-date</validate>
 					<comment>Select the expiration date using the picker</comment>
@@ -32,13 +32,13 @@
 
 				<field id="bgcolor" translate="label comment" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1">
 					<label>Background Colour</label>
-					<frontend_model>CravenDunnill\CountdownBanner\Block\Adminhtml\Form\Field\ColorPicker</frontend_model>
+					<frontend_model>CleverComms\CountdownBanner\Block\Adminhtml\Form\Field\ColorPicker</frontend_model>
 					<comment>Enter HEX color code for background, e.g. #FFFFFF for white</comment>
 				</field>
 				
 				<field id="textcolor" translate="label comment" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1">
 					<label>Text Colour</label>
-					<frontend_model>CravenDunnill\CountdownBanner\Block\Adminhtml\Form\Field\ColorPicker</frontend_model>
+					<frontend_model>CleverComms\CountdownBanner\Block\Adminhtml\Form\Field\ColorPicker</frontend_model>
 					<comment>Enter HEX color code for text, e.g. #000000 for black</comment>
 				</field>
 
