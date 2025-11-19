@@ -6,7 +6,7 @@
 				<resource id="Magento_Backend::stores">
 					<resource id="Magento_Backend::stores_settings">
 						<resource id="Magento_Config::config">
-							<resource id="CleverComms_CountdownBanner::config_countdownbanner" title="Countdown Banner Configuration" sortOrder="10"/>
+							<resource id="CravenDunnill_CountdownBanner::config_countdownbanner" title="Countdown Banner Configuration" sortOrder="10"/>
 						</resource>
 					</resource>
 				</resource>

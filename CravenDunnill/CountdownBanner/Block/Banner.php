@@ -1,5 +1,5 @@
 <?php
-namespace CleverComms\CountdownBanner\Block;
+namespace CravenDunnill\CountdownBanner\Block;
 
 use Magento\Framework\View\Element\Template;
 use Magento\Framework\App\Config\ScopeConfigInterface;
